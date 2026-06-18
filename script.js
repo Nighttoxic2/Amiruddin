@@ -28,8 +28,12 @@ const details = {
 const nodeDetail = document.getElementById('nodeDetail');
 document.querySelectorAll('.node').forEach((button) => {
   button.addEventListener('click', () => {
-    document.querySelectorAll('.node').forEach((b) => b.classList.remove('active'));
+    document.querySelectorAll('.node').forEach((b) => {
+      b.classList.remove('active');
+      b.setAttribute('aria-pressed', 'false');
+    });
     button.classList.add('active');
+    button.setAttribute('aria-pressed', 'true');
     const data = details[button.dataset.node];
     nodeDetail.animate([{ opacity: 0, transform: 'translateY(8px)' }, { opacity: 1, transform: 'translateY(0)' }], { duration: 260, easing: 'ease-out' });
     nodeDetail.innerHTML = `<h3>${data.title}</h3><p>${data.copy}</p>`;
