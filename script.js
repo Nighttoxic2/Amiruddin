@@ -51,7 +51,24 @@ document.querySelectorAll('[data-tilt]').forEach((card) => {
 });
 
 const themeToggle = document.getElementById('themeToggle');
+const themeMeta = document.querySelector('meta[name="theme-color"]');
+
+const setTheme = (theme, persist = true) => {
+  const isLight = theme === 'light';
+  document.body.classList.toggle('light-mode', isLight);
+  themeToggle.setAttribute('aria-pressed', String(isLight));
+  themeToggle.setAttribute('aria-label', isLight ? 'Switch to dark mode' : 'Switch to light mode');
+  if (themeMeta) themeMeta.setAttribute('content', isLight ? '#f6f4ef' : '#07111f');
+  if (persist) localStorage.setItem('portfolio-theme', isLight ? 'light' : 'dark');
+};
+
+const savedTheme = localStorage.getItem('portfolio-theme');
+if (savedTheme === 'light' || savedTheme === 'dark') {
+  setTheme(savedTheme, false);
+} else {
+  setTheme(window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark', false);
+}
+
 themeToggle.addEventListener('click', () => {
-  document.body.classList.toggle('light-mode');
-  themeToggle.textContent = document.body.classList.contains('light-mode') ? '◑' : '◐';
+  setTheme(document.body.classList.contains('light-mode') ? 'dark' : 'light');
 });

@@ -21,7 +21,11 @@
       <a href="#timeline">Timeline</a>
       <a href="#contact">Contact</a>
     </div>
-    <button class="theme-toggle" id="themeToggle" aria-label="Toggle light and dark mode" title="Toggle light and dark mode">◐</button>
+    <button class="theme-toggle" id="themeToggle" type="button" aria-label="Switch to light mode" aria-pressed="false" title="Toggle light and dark mode">
+      <span class="theme-toggle-icon theme-toggle-sun" aria-hidden="true">☀</span>
+      <span class="theme-toggle-thumb" aria-hidden="true"></span>
+      <span class="theme-toggle-icon theme-toggle-moon" aria-hidden="true">☾</span>
+    </button>
   </nav>
 
   <main id="top">
@@ -152,10 +156,22 @@
         <h2>A compact map of how I work.</h2>
       </div>
       <div class="lab-board reveal">
-        <button class="node active" data-node="linux">Linux</button>
-        <button class="node" data-node="docker">Docker</button>
-        <button class="node" data-node="networking">Networking</button>
-        <button class="node" data-node="support">Support</button>
+        <button class="node active" data-node="linux" type="button">
+          <span class="node-icon" aria-hidden="true">⌁</span>
+          <span class="node-label">Linux</span>
+        </button>
+        <button class="node" data-node="docker" type="button">
+          <span class="node-icon" aria-hidden="true">▣</span>
+          <span class="node-label">Docker</span>
+        </button>
+        <button class="node" data-node="networking" type="button">
+          <span class="node-icon" aria-hidden="true">◎</span>
+          <span class="node-label">Networking</span>
+        </button>
+        <button class="node" data-node="support" type="button">
+          <span class="node-icon" aria-hidden="true">◈</span>
+          <span class="node-label">Support</span>
+        </button>
         <div class="node-detail" id="nodeDetail">
           <h3>Linux systems support</h3>
           <p>Server updates, service checks, basic troubleshooting and remote maintenance in a lab environment.</p>
