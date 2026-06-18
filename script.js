@@ -8,7 +8,7 @@ document.querySelectorAll('.reveal').forEach((el) => revealObserver.observe(el))
 
 const details = {
   linux: {
-    title: 'Linux administration',
+    title: 'Linux systems support',
     copy: 'Server updates, service checks, basic troubleshooting and remote maintenance in a lab environment.'
   },
   docker: {
