@@ -4,11 +4,35 @@ if (!prefersReducedMotion) document.documentElement.classList.add('motion-ready'
 document.getElementById('year').textContent = new Date().getFullYear();
 
 const header = document.querySelector('[data-glass]');
+const menuToggle = document.querySelector('.menu-toggle');
+const mobileMenu = document.getElementById('mobile-menu');
+
 const syncHeader = () => {
   header.classList.toggle('is-scrolled', window.scrollY > 18);
 };
+const closeMenu = () => {
+  mobileMenu.setAttribute('hidden', '');
+  menuToggle.setAttribute('aria-expanded', 'false');
+  menuToggle.textContent = 'Menu';
+};
+const openMenu = () => {
+  mobileMenu.removeAttribute('hidden');
+  menuToggle.setAttribute('aria-expanded', 'true');
+  menuToggle.textContent = 'Close';
+};
+
 syncHeader();
 window.addEventListener('scroll', syncHeader, { passive: true });
+menuToggle.addEventListener('click', () => {
+  const isOpen = mobileMenu.hasAttribute('hidden');
+  isOpen ? openMenu() : closeMenu();
+});
+
+mobileMenu.querySelectorAll('a').forEach((link) => {
+  link.addEventListener('click', () => {
+    closeMenu();
+  });
+});
 
 if (!prefersReducedMotion) {
   const revealObserver = new IntersectionObserver((entries) => {

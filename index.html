@@ -4,9 +4,9 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Muhammad Amiruddin — Cybersecurity, Linux & AI Infrastructure</title>
-  <meta name="description" content="Portfolio of Muhammad Amiruddin Bin Mohd Khairulazhar, an aspiring cybersecurity and AI infrastructure professional building hands-on Linux, Docker, homelab and automation projects." />
+  <meta name="description" content="Portfolio of Muhammad Amiruddin Bin Mohd Khairulazhar: an aspiring cybersecurity and IT support professional building real Linux, Docker, AI automation and homelab infrastructure." />
   <meta name="author" content="Muhammad Amiruddin Bin Mohd Khairulazhar" />
-  <meta name="theme-color" content="#05070c" />
+  <meta name="theme-color" content="#07080f" />
   <link rel="canonical" href="https://nighttoxic2.github.io/amiruddin-portfolio/" />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://nighttoxic2.github.io/amiruddin-portfolio/" />
@@ -29,14 +29,13 @@
     "email": "mailto:amirfao99@gmail.com",
     "address": { "@type": "PostalAddress", "addressLocality": "Sungai Buloh", "addressRegion": "Selangor", "addressCountry": "MY" },
     "jobTitle": "Aspiring Cybersecurity and IT Support Professional",
-    "knowsAbout": ["Cybersecurity", "Linux", "Docker", "Networking", "AI automation", "Homelab infrastructure", "IT support"],
+    "knowsAbout": ["Cybersecurity", "Linux", "Docker", "Networking", "AI automation", "Homelab infrastructure", "IT support", "HTML", "CSS", "SQL", "Swift"],
     "sameAs": ["https://github.com/Nighttoxic2", "https://www.linkedin.com/in/muhammad-amiruddin-597881111/"]
   }
   </script>
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
-
   <header class="site-header" data-glass>
     <a class="brand" href="#top" aria-label="Go to homepage">
       <span class="brand-mark" aria-hidden="true"></span>
@@ -45,37 +44,50 @@
     <nav class="nav-links" aria-label="Primary navigation">
       <a href="#story">Story</a>
       <a href="#projects">Projects</a>
-      <a href="#stack">Stack</a>
+      <a href="#skills">Skills</a>
+      <a href="#experience">Experience</a>
       <a href="#timeline">Timeline</a>
       <a href="#contact">Contact</a>
     </nav>
+    <button class="menu-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu">Menu</button>
     <a class="header-cta" href="assets/Muhammad-Amiruddin-Resume-Public.pdf" download>Resume</a>
   </header>
+
+  <div id="mobile-menu" class="mobile-menu" hidden>
+    <a href="#story">Story</a>
+    <a href="#projects">Projects</a>
+    <a href="#skills">Skills</a>
+    <a href="#experience">Experience</a>
+    <a href="#timeline">Timeline</a>
+    <a href="#contact">Contact</a>
+    <a class="header-cta" href="assets/Muhammad-Amiruddin-Resume-Public.pdf" download>Resume</a>
+  </div>
 
   <main id="main">
     <section id="top" class="hero section-shell">
       <div class="ambient-grid" aria-hidden="true"></div>
       <div class="hero-copy reveal">
-        <p class="eyebrow">Cybersecurity · Linux · Docker · AI Infrastructure</p>
+        <p class="eyebrow">Cybersecurity · AI · Linux · Docker</p>
         <h1>Muhammad Amiruddin Bin Mohd Khairulazhar</h1>
-        <p class="hero-title">Aspiring cybersecurity and IT support professional building real systems, not just collecting notes.</p>
-        <p class="hero-text">I am a self-driven builder from Sungai Buloh, Selangor, focused on Linux, Docker, secure remote access, automation and practical infrastructure. My portfolio is built around proof of work: Sarvar, Hermes, News Sarvar, DNS filtering, media hosting and static deployment.</p>
+        <p class="hero-title">I build secure, automated systems because theory doesn’t replace real infrastructure.</p>
+        <p class="hero-text">From POS support to home lab operator, I’ve spent the last few years putting cybersecurity, Docker and AI automation into practice on Sarvar — my repurposed-laptop home server. I learn by building things I can break, fix, document and defend.</p>
         <div class="hero-actions" aria-label="Primary actions">
           <a class="btn btn-primary magnetic" href="#projects">View case studies</a>
           <a class="btn btn-secondary magnetic" href="assets/Muhammad-Amiruddin-Resume-Public.pdf" download>Download resume</a>
+          <a class="btn btn-ghost magnetic" href="#contact">Contact me</a>
         </div>
-        <dl class="hero-stats" aria-label="Portfolio highlights">
-          <div><dt>Security+</dt><dd>Certified</dd></div>
-          <div><dt>RCCE</dt><dd>Level 1 & 2</dd></div>
-          <div><dt>Linux</dt><dd>Homelab</dd></div>
-          <div><dt>Docker</dt><dd>Hands-on</dd></div>
-        </dl>
+        <ul class="hero-stats" aria-label="Portfolio highlights">
+          <li><span>Security+</span><span>Certified</span></li>
+          <li><span>RCCE</span><span>Level 1 &amp; 2</span></li>
+          <li><span>Linux</span><span>Homelab</span></li>
+          <li><span>Docker</span><span>Hands-on</span></li>
+        </ul>
       </div>
       <div class="hero-portrait reveal" aria-label="Portrait of Muhammad Amiruddin">
         <div class="portrait-frame">
           <picture>
             <source srcset="assets/portrait-corporate.webp" type="image/webp" />
-            <img src="assets/portrait-corporate.jpg" alt="Muhammad Amiruddin in a dark suit" width="900" height="1120" />
+            <img src="assets/portrait-corporate.jpg" alt="Corporate portrait of Muhammad Amiruddin" width="900" height="1120" />
           </picture>
           <div class="portrait-badge">Available for cybersecurity / IT support roles</div>
         </div>
@@ -89,7 +101,7 @@
           <h2>I learn by building systems I actually depend on.</h2>
         </div>
         <div class="story-copy reveal">
-          <p>I come from operations, support and business management, then moved seriously into cybersecurity and infrastructure by building my own environment. I enjoy technology because it rewards curiosity: when something breaks, there is always a reason, a log, a setting, a network path or a design decision to understand.</p>
+          <p>I started with operations, support and business management, then moved seriously into cybersecurity and infrastructure by building my own environment. I enjoy technology because it rewards curiosity: when something breaks, there is always a reason, a log, a setting, a network path or a design decision to understand.</p>
           <p>Cybersecurity interests me because it combines responsibility with problem solving. Linux and Docker give me a practical playground to learn how services run, fail, recover and stay secure. AI automation interests me because it turns daily support and knowledge work into systems that can help people faster.</p>
           <p>The result is Sarvar: my home server and learning platform. It is where I practice service ownership, documentation, secure access, DNS, reverse proxying, photo hosting, automation and AI-assisted workflows.</p>
         </div>
@@ -121,12 +133,42 @@
       </div>
 
       <div class="project-grid">
-        <article class="project-card reveal"><div class="project-top"><span>AI automation</span><strong>01</strong></div><h3>Hermes Agent</h3><p>Configured and operated an AI assistant workflow across profiles and messaging channels to support personal automation, family support and infrastructure tasks.</p><ul><li>Profile isolation and controlled tool access</li><li>Telegram/iMessage operational workflows</li><li>Memory, scheduling and assistant automation</li></ul></article>
-        <article class="project-card reveal"><div class="project-top"><span>News system</span><strong>02</strong></div><h3>News Sarvar</h3><p>A private newsroom-style automation stack for collecting, queueing and managing news items through services and bot workflows.</p><ul><li>Frontend, CMS/API, automation and database services</li><li>Docker-based service ownership</li><li>Queue and command workflow thinking</li></ul></article>
-        <article class="project-card reveal"><div class="project-top"><span>Containers</span><strong>03</strong></div><h3>Docker Infrastructure</h3><p>Hands-on deployment of self-hosted services with volumes, container networking, restarts, updates and operational checks.</p><ul><li>Persistent storage awareness</li><li>Service restart and update habits</li><li>Container health and troubleshooting</li></ul></article>
-        <article class="project-card reveal"><div class="project-top"><span>DNS security</span><strong>04</strong></div><h3>Pi-hole DNS Filtering</h3><p>Configured DNS filtering and observed LAN client behavior to understand privacy, ad blocking, resolver choices and failover tradeoffs.</p><ul><li>DNS filtering concepts</li><li>Client visibility and troubleshooting</li><li>Availability versus strict enforcement decisions</li></ul></article>
-        <article class="project-card reveal"><div class="project-top"><span>Media service</span><strong>05</strong></div><h3>Immich Photo Hosting</h3><p>Deployed a self-hosted media service to learn containerized application stacks, storage, databases, cache services and maintenance.</p><ul><li>Multi-container application stack</li><li>Storage and backup awareness</li><li>Private media service operation</li></ul></article>
-        <article class="project-card reveal"><div class="project-top"><span>Static web</span><strong>06</strong></div><h3>Portfolio on GitHub Pages</h3><p>Built a public, static, recruiter-focused website with SEO metadata, structured data, accessibility checks and public-safety scanning.</p><ul><li>HTML, CSS and JavaScript</li><li>GitHub Pages deployment</li><li>SEO and static-site hygiene</li></ul></article>
+        <article class="project-card reveal">
+          <div class="project-top"><span class="project-category">AI automation</span><strong>01</strong></div>
+          <h3>Hermes Agent</h3>
+          <p>Configured and operated an AI assistant workflow across profiles and messaging channels to support personal automation, family support and infrastructure tasks.</p>
+          <ul><li>Profile isolation and controlled tool access</li><li>Telegram and iMessage operational workflows</li><li>Memory, scheduling and assistant automation</li></ul>
+        </article>
+        <article class="project-card reveal">
+          <div class="project-top"><span class="project-category">News system</span><strong>02</strong></div>
+          <h3>News Sarvar</h3>
+          <p>A private newsroom-style automation stack for collecting, queueing and managing news items through services and bot workflows.</p>
+          <ul><li>Frontend, CMS/API, automation and database services</li><li>Docker-based service ownership</li><li>Queue and command workflow thinking</li></ul>
+        </article>
+        <article class="project-card reveal">
+          <div class="project-top"><span class="project-category">Containers</span><strong>03</strong></div>
+          <h3>Docker Infrastructure</h3>
+          <p>Hands-on deployment of self-hosted services with volumes, container networking, restarts, updates and operational checks.</p>
+          <ul><li>Persistent storage awareness</li><li>Service restart and update habits</li><li>Container health and troubleshooting</li></ul>
+        </article>
+        <article class="project-card reveal">
+          <div class="project-top"><span class="project-category">DNS security</span><strong>04</strong></div>
+          <h3>Pi-hole DNS Filtering</h3>
+          <p>Configured DNS filtering and observed LAN client behavior to understand privacy, ad blocking, resolver choices and failover tradeoffs.</p>
+          <ul><li>DNS filtering concepts</li><li>Client visibility and troubleshooting</li><li>Availability versus strict enforcement decisions</li></ul>
+        </article>
+        <article class="project-card reveal">
+          <div class="project-top"><span class="project-category">Media service</span><strong>05</strong></div>
+          <h3>Immich Photo Hosting</h3>
+          <p>Deployed a self-hosted media service to learn containerized application stacks, storage, databases, cache services and maintenance.</p>
+          <ul><li>Multi-container application stack</li><li>Storage and backup awareness</li><li>Private media service operation</li></ul>
+        </article>
+        <article class="project-card reveal">
+          <div class="project-top"><span class="project-category">Static web</span><strong>06</strong></div>
+          <h3>Portfolio on GitHub Pages</h3>
+          <p>Built a public, static, recruiter-focused website with SEO metadata, structured data, accessibility checks and public-safety scanning.</p>
+          <ul><li>HTML, CSS and JavaScript</li><li>GitHub Pages deployment</li><li>SEO and static-site hygiene</li></ul>
+        </article>
       </div>
 
       <div class="future-note reveal">
@@ -135,45 +177,98 @@
       </div>
     </section>
 
-    <section id="stack" class="section section-muted">
+    <section id="skills" class="section section-muted">
       <div class="section-heading reveal">
         <p class="eyebrow">Technical stack</p>
         <h2>Grouped by real confidence, not keyword stuffing.</h2>
       </div>
       <div class="skills-board">
-        <article class="skill-column reveal"><h3>Comfortable</h3><div class="skill-tags"><span>Linux basics</span><span>Kali Linux</span><span>Docker deployments</span><span>GitHub Pages</span><span>HTML</span><span>CSS</span><span>SSH / PuTTY</span><span>IT support</span><span>Documentation</span><span>POS troubleshooting</span></div></article>
-        <article class="skill-column reveal"><h3>Currently learning</h3><div class="skill-tags"><span>Cybersecurity fundamentals</span><span>Networking</span><span>Pi-hole</span><span>Immich</span><span>Nginx Proxy Manager</span><span>Tailscale concepts</span><span>SQL basics</span><span>Swift basics</span><span>AI automation</span></div></article>
-        <article class="skill-column reveal"><h3>Interested in</h3><div class="skill-tags"><span>SOC workflows</span><span>SIEM fundamentals</span><span>Incident response</span><span>DevOps practices</span><span>Cloud infrastructure</span><span>Nextcloud</span><span>Infrastructure as code</span><span>Secure backups</span></div></article>
+        <article class="skill-column reveal"><h3>Cybersecurity</h3><div class="skill-tags"><span>CompTIA Security+</span><span>RCCE Level 1 & 2</span><span>TryHackMe labs</span><span>Security awareness</span><span>Access control thinking</span></div></article>
+        <article class="skill-column reveal"><h3>Infrastructure</h3><div class="skill-tags"><span>Linux</span><span>Kali Linux</span><span>Docker</span><span>Nginx Proxy Manager</span><span>SSH</span><span>GitHub Pages</span></div></article>
+        <article class="skill-column reveal"><h3>Networking</h3><div class="skill-tags"><span>Basic networking</span><span>DNS</span><span>Pi-hole</span><span>Tailscale</span><span>Port forwarding</span><span>Remote access</span></div></article>
+        <article class="skill-column reveal"><h3>Programming</h3><div class="skill-tags"><span>HTML</span><span>CSS</span><span>SQL</span><span>Swift</span><span>YAML</span><span>Bash scripting</span></div></article>
+        <article class="skill-column reveal"><h3>Automation</h3><div class="skill-tags"><span>AI automation</span><span>Service orchestration</span><span>Queue workflows</span><span>Monitoring habits</span><span>Documentation</span></div></article>
+        <article class="skill-column reveal"><h3>Soft Skills</h3><div class="skill-tags"><span>Communication</span><span>Problem-solving</span><span>Organization</span><span>Time management</span><span>Customer service</span><span>Discipline</span></div></article>
       </div>
     </section>
 
-    <section class="section recruiter-section">
+    <section id="experience" class="section recruiter-section">
+      <div class="recruiter-card reveal">
+        <div>
+          <p class="eyebrow">Experience</p>
+          <h2>Operations, projects and support — with a cybersecurity mindset.</h2>
+        </div>
+        <div class="experience-list">
+          <div class="experience-item reveal">
+            <div class="experience-meta"><time datetime="2025-10">2025</time><span>T Tech Solution Borneo Sdn Bhd</span></div>
+            <h3>Support Technician — POS Systems</h3>
+            <p>Installed, configured, maintained and troubleshot POS hardware and software, minimizing downtime and keeping business operations running.</p>
+          </div>
+          <div class="experience-item reveal">
+            <div class="experience-meta"><time datetime="2024-10">2024</time><span>Cogue Studio Sdn Bhd</span></div>
+            <h3>Project Executive — Events & Operations</h3>
+            <p>Managed end-to-end event execution including vendor coordination, budgeting, on-site operations and stakeholder reporting. Resigned to pursue further studies.</p>
+          </div>
+          <div class="experience-item reveal">
+            <div class="experience-meta"><time datetime="2023-03">2023</time><span>FLP Academy</span></div>
+            <h3>Personal Assistant to Director cum Event & Content Manager</h3>
+            <p>Planned masterclass tours and company trips, managed digital content, executive schedules, travel logistics and confidential support work.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-muted">
       <div class="recruiter-card reveal">
         <div>
           <p class="eyebrow">Why interview me?</p>
           <h2>I am early-career, but I already build and maintain real things.</h2>
         </div>
         <div class="recruiter-points">
-          <p><strong>Continuous learner:</strong> Security+, RCCE and TryHackMe are paired with practical lab work.</p>
-          <p><strong>Self-driven:</strong> I built Sarvar because I wanted real infrastructure to learn from.</p>
-          <p><strong>Support-ready:</strong> POS support experience taught clear communication with non-technical users.</p>
-          <p><strong>Security-aware:</strong> I avoid exposing private details and think about access boundaries.</p>
+          <p><strong>Continuous learner:</strong> Security+, RCCE and TryHackMe are paired with practical lab work, not just certificates.</p>
+          <p><strong>Self-driven:</strong> I built Sarvar because I wanted real infrastructure to learn from, not because a course required it.</p>
+          <p><strong>Support-ready:</strong> POS support experience taught clear communication with non-technical users and fast incident recovery.</p>
+          <p><strong>Security-aware:</strong> I avoid exposing private details, think about access boundaries and follow least-exposure habits.</p>
         </div>
       </div>
     </section>
 
-    <section id="timeline" class="section section-muted">
+    <section id="timeline" class="section">
       <div class="section-heading centered reveal">
         <p class="eyebrow">Timeline</p>
         <h2>A learning journey from operations into cybersecurity and infrastructure.</h2>
       </div>
       <div class="timeline" aria-label="Career and learning timeline">
-        <article class="timeline-item reveal"><time>Education</time><h3>Diploma in Business Management — UNISEL</h3><p>Built a foundation in communication, operations, organisation and business discipline.</p></article>
-        <article class="timeline-item reveal"><time>Certifications</time><h3>CompTIA Security+ and RCCE Level 1 & 2</h3><p>Established entry-level cybersecurity fundamentals and a stronger security vocabulary.</p></article>
-        <article class="timeline-item reveal"><time>2023</time><h3>Personal Assistant / Event & Content Manager — FLP Academy</h3><p>Managed logistics, content, documentation, schedules and confidential support work.</p></article>
-        <article class="timeline-item reveal"><time>2024</time><h3>Project Executive — Events & Operations</h3><p>Coordinated vendors, timelines, on-site work, reporting and project delivery.</p></article>
-        <article class="timeline-item reveal"><time>2025</time><h3>Support Technician — POS Systems</h3><p>Installed, configured, maintained and troubleshot POS hardware/software for users.</p></article>
-        <article class="timeline-item reveal"><time>Now</time><h3>Sarvar, Hermes and cybersecurity learning</h3><p>Building and documenting hands-on systems to prepare for IT support, SOC and cybersecurity roles.</p></article>
+        <article class="timeline-item reveal">
+          <time datetime="2019">Education</time>
+          <h3>Diploma in Business Management — UNISEL</h3>
+          <p>Built a foundation in communication, operations, organisation and business discipline.</p>
+        </article>
+        <article class="timeline-item reveal">
+          <time datetime="2023-03">2023</time>
+          <h3>Personal Assistant / Event & Content Manager — FLP Academy</h3>
+          <p>Managed logistics, content, documentation, schedules and confidential support work.</p>
+        </article>
+        <article class="timeline-item reveal">
+          <time datetime="2024-10">2024</time>
+          <h3>Project Executive — Events & Operations</h3>
+          <p>Coordinated vendors, timelines, on-site work, reporting and project delivery.</p>
+        </article>
+        <article class="timeline-item reveal">
+          <time datetime="2025-10">2025</time>
+          <h3>Support Technician — POS Systems</h3>
+          <p>Installed, configured, maintained and troubleshot POS hardware/software for users.</p>
+        </article>
+        <article class="timeline-item reveal">
+          <time datetime="2025">Certifications</time>
+          <h3>CompTIA Security+ and RCCE Level 1 & 2</h3>
+          <p>Established entry-level cybersecurity fundamentals and a stronger security vocabulary.</p>
+        </article>
+        <article class="timeline-item reveal">
+          <time datetime="2025">Now</time>
+          <h3>Sarvar, Hermes and cybersecurity learning</h3>
+          <p>Building and documenting hands-on systems to prepare for IT support, SOC and cybersecurity roles.</p>
+        </article>
       </div>
     </section>
 
