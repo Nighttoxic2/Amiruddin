@@ -6,18 +6,25 @@ document.getElementById('year').textContent = new Date().getFullYear();
 const header = document.querySelector('[data-glass]');
 const menuToggle = document.querySelector('.menu-toggle');
 const mobileMenu = document.getElementById('mobile-menu');
+const menuBackdrop = document.getElementById('menu-backdrop');
 
 const syncHeader = () => {
   header.classList.toggle('is-scrolled', window.scrollY > 18);
 };
 const closeMenu = () => {
+  mobileMenu.classList.remove('is-open');
   mobileMenu.setAttribute('hidden', '');
+  menuBackdrop.classList.remove('is-open');
+  menuBackdrop.setAttribute('aria-hidden', 'true');
   menuToggle.setAttribute('aria-expanded', 'false');
   menuToggle.textContent = 'Menu';
   document.body.style.overflow = '';
 };
 const openMenu = () => {
+  mobileMenu.classList.add('is-open');
   mobileMenu.removeAttribute('hidden');
+  menuBackdrop.classList.add('is-open');
+  menuBackdrop.setAttribute('aria-hidden', 'false');
   menuToggle.setAttribute('aria-expanded', 'true');
   menuToggle.textContent = 'Close';
   document.body.style.overflow = 'hidden';
@@ -28,6 +35,9 @@ window.addEventListener('scroll', syncHeader, { passive: true });
 menuToggle.addEventListener('click', () => {
   const isOpen = mobileMenu.hasAttribute('hidden');
   isOpen ? openMenu() : closeMenu();
+});
+menuBackdrop.addEventListener('click', () => {
+  closeMenu();
 });
 
 document.addEventListener('keydown', (event) => {

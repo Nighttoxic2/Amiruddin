@@ -124,25 +124,44 @@ button, a { -webkit-tap-highlight-color: transparent; }
   background: rgba(255,255,255,.08);
   color: #fff;
   font-weight: 800;
+  cursor: pointer;
 }
 .mobile-menu {
   position: fixed;
-  inset-block-start: 84px;
+  inset-block-start: 78px;
   left: 50%;
-  transform: translateX(-50%);
+  transform: translateX(-50%) translateY(8px);
   width: min(calc(100% - 28px), var(--max));
   z-index: 85;
   display: flex;
   flex-direction: column;
-  gap: 10px;
-  padding: 16px;
+  gap: 6px;
+  padding: 18px;
   border: 1px solid var(--line);
-  border-radius: 22px;
-  background: rgba(7,8,15,.72);
-  backdrop-filter: blur(22px) saturate(160%);
+  border-radius: 24px;
+  background: rgba(7,8,15,.78);
+  backdrop-filter: blur(24px) saturate(160%);
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity .22s ease, transform .22s ease, visibility .22s ease;
 }
-.mobile-menu a { padding: 12px 10px; border-radius: 16px; }
+.mobile-menu.is-open {
+  opacity: 1;
+  visibility: visible;
+  transform: translateX(-50%) translateY(0);
+}
+.mobile-menu a { padding: 14px 12px; border-radius: 16px; font-weight: 700; }
 .mobile-menu a:hover, .mobile-menu a:focus-visible { background: rgba(255,255,255,.06); }
+.menu-backdrop {
+  position: fixed;
+  inset: 0;
+  z-index: 80;
+  background: rgba(0,0,0,.35);
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity .22s ease, visibility .22s ease;
+}
+.menu-backdrop.is-open { opacity: 1; visibility: visible; }
 
 .section-shell, .section {
   width: min(100%, calc(var(--max) + 48px));
