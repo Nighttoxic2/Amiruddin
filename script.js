@@ -14,11 +14,13 @@ const closeMenu = () => {
   mobileMenu.setAttribute('hidden', '');
   menuToggle.setAttribute('aria-expanded', 'false');
   menuToggle.textContent = 'Menu';
+  document.body.style.overflow = '';
 };
 const openMenu = () => {
   mobileMenu.removeAttribute('hidden');
   menuToggle.setAttribute('aria-expanded', 'true');
   menuToggle.textContent = 'Close';
+  document.body.style.overflow = 'hidden';
 };
 
 syncHeader();
@@ -26,6 +28,13 @@ window.addEventListener('scroll', syncHeader, { passive: true });
 menuToggle.addEventListener('click', () => {
   const isOpen = mobileMenu.hasAttribute('hidden');
   isOpen ? openMenu() : closeMenu();
+});
+
+document.addEventListener('keydown', (event) => {
+  if (event.key === 'Escape' && !mobileMenu.hasAttribute('hidden')) {
+    closeMenu();
+    menuToggle.focus();
+  }
 });
 
 mobileMenu.querySelectorAll('a').forEach((link) => {
